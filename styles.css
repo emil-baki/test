@@ -1,0 +1,221 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Шапка */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Слайдер */
+.slider {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slider .active {
+  display: block;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Кнопки для слайдера */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Стиль для текста */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  margin: 30px auto;
+}
+
+.cta-btn:hover {
+  background-color: #45a049;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .slider-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Стили для кнопки "Позвонить" */
+.call-btn {
+  display: inline-block;
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px;
+  margin-top: 20px; /* Расстояние сверху */
+  transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.call-btn:hover {
+  background-color: #45a049; /* Темный оттенок зеленого при наведении */
+}
+
+.call-btn:active {
+  background-color: #387c39; /* Еще более темный оттенок при клике */
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .call-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+/* Блок социальных иконок */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Расстояние между иконками */
+  margin-top: 30px;
+}
+
+/* Стили для каждой иконки */
+.social-icon img {
+  width: 40px; /* Размер иконки */
+  height: 40px; /* Пропорциональная высота */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Плавные эффекты */
+}
+
+/* Эффект при наведении */
+.social-icon:hover img {
+  transform: scale(1.1); /* Увеличение иконки при наведении */
+  filter: brightness(1.2); /* Увеличение яркости */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .social-icon img {
+    width: 35px; /* Меньший размер иконок для мобильных */
+    height: 35px;
+  }
+}
+/* Стили для иконок Font Awesome */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-icon i {
+  font-size: 30px; /* Размер иконки */
+  color: #333; /* Цвет иконки */
+  transition: transform 0.3s ease, color 0.3s ease; /* Плавные эффекты */
+}
+
+.social-icon:hover i {
+  transform: scale(1.1); /* Увеличение иконки при наведении */
+  color: #4CAF50; /* Цвет при наведении */
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
